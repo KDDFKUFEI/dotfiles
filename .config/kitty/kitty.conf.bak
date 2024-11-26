@@ -1,0 +1,12 @@
+map ctrl+shift+j next_window
+map ctrl+shift+k previous_window
+
+
+# BEGIN_KITTY_FONTS
+font_family      family='JetBrains Mono' style=Light
+bold_font        family='JetBrains Mono' postscript_name=JetBrainsMono-Bold
+italic_font      family='JetBrains Mono' postscript_name=JetBrainsMono-LightItalic
+bold_italic_font family='JetBrains Mono' postscript_name=JetBrainsMono-BoldItalic
+# END_KITTY_FONTS
+
+font_size 10
