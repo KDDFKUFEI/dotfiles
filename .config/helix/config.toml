@@ -1,0 +1,69 @@
+theme = "tokyonight_storm"
+
+[editor.cursor-shape]
+insert = "bar"
+select = "underline"
+
+[editor]
+auto-format = true
+completion-timeout = 5
+completion-trigger-len = 1
+completion-replace = true
+line-number = "relative"
+bufferline = "always"
+cursorline = true
+color-modes = true
+auto-save = true
+shell = ["zsh"]
+
+[keys.normal]
+esc = ["collapse_selection", "keep_primary_selection"]
+C-l = ["delete_selection", "move_line_up", "paste_before"]
+C-k = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+j = ["move_char_left"]
+k = ["move_visual_line_down"]
+l = ["move_visual_line_up"]
+"ö" = ["move_char_right"]
+# h = [":run-shell-command cd build; cmake ../; make; ./*.out"]
+up = "no_op"
+down = "no_op"
+left = "no_op"
+right = "no_op"
+pageup = "no_op"
+pagedown = "no_op"
+home = "no_op"
+end = "no_op"
+
+[keys.select]
+j = ["extend_char_left"]
+k = ["extend_visual_line_down"]
+l = ["extend_visual_line_up"]
+"ö" = ["extend_char_right"]
+up = "no_op"
+down = "no_op"
+left = "no_op"
+right = "no_op"
+pageup = "no_op"
+pagedown = "no_op"
+home = "no_op"
+end = "no_op"
+
+[keys.insert]
+up = "no_op"
+down = "no_op"
+left = "no_op"
+right = "no_op"
+pageup = "no_op"
+pagedown = "no_op"
+home = "no_op"
+end = "no_op"
+
+[editor.soft-wrap]
+enable = true
+
+[editor.lsp]
+enable = true
+display-messages = true
+
+[editor.file-picker]
+hidden = false
