@@ -43,7 +43,6 @@ discord -no-update
 hx .config/discord/settings.json
 hx .zshrc
 mv .dotfiles dotfiles
-ls -a
 ls -a | grep dotfiles
 cp .z* dotfiles
 tree dotfiles
@@ -64,4 +63,71 @@ stow .
 ls -al | grep kitty
 git branch -M main
 git remote add origin https://github.com/KDDFKUFEI/dotfiles.git
+git config --global user.email "175651765+KDDFKUFEI@users.noreply.github.com"
+git config --global user.name "KDDFKUFEI"
+git config --global user.password
+git config --global user.password "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"
+git commit --amend --reset-author --no-edit
+man git push
 git push -u origin main
+ls -al | grep LOCK
+cat .zshhistfile.LOCK
+ls /
+rm .zshhistfile.LOCK
+hx .stow-local-ignore
+ls -a
+ls .git
+mv kitty .config/
+ls -a
+stow .
+rm .zshhistfile.LOCK
+rm .zshhistfile
+ls -a
+ls -al | grep z
+stow .
+ls -al | grep z
+ls -al .config | grep kitty
+rm -r .config/kitty
+stow .
+ls -al .config | grep kitty
+tree -a
+ls -al | grep z
+stow .
+ls -al .config | grep kitty
+rm .config/kitty.conf .config/kitty.conf.bak 
+ls -al .config | grep kitty
+ls -a
+ls -al .git
+cat .stow-local-ignore
+rm .git
+ls .git
+stow .
+ls -al .git
+hx .stow-local-ignore
+rm .git
+stow .
+ls -al .git
+: 1732628263:0;hx .gitignore
+: 1732628370:0;ls -a
+: 1732628383:0;cat .stow-local-ignore
+: 1732630357:0;git status
+: 1732630388:0;cat .gitignore
+: 1732630393:0;hx .gitignore
+: 1732630526:0;git add .
+: 1732630529:0;git status
+: 1732630570:0;cat .gitignore
+: 1732630584:0;git add .*
+: 1732630596:0;git status
+: 1732630611:0;git add .zshhistfile
+: 1732630614:0;git status
+: 1732630641:0;ls -a
+: 1732630831:0;git restore --staged .aliases.zsh .config/.zshhistfile .config/kitty/kitty.conf.bak .config/kitty/kitty.conf .stow-local-ignore .zcompdump .zshenv .zshrc 
+: 1732630835:0;git status
+: 1732630862:0;git restore --staged .zshhistfile
+: 1732630864:0;git status
+: 1732630889:0;rm .config/.zshhistfile
+: 1732630946:0;git add .stow-local-ignore
+: 1732630951:0;git status
+: 1732630997:0;git commit -m "stow ignore added"
+: 1732633282:0;git status
+: 1732633320:0;git add .zshhistfile .zshrc

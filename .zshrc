@@ -103,7 +103,7 @@ compinit
 # End of lines added by compinstall
 
 # Lines configured by zsh-newuser-install
-HISTFILE=.zshhistfile
+HISTFILE=~/dotfiles/.zshhistfile
 HISTSIZE=10000
 SAVEHIST=$HISTSIZE
 setopt autocd beep extendedglob notify
