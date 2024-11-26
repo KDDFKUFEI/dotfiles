@@ -1,6 +1,5 @@
 rm zshhistfile
 unmerge fish
-ls -a
 ls -a | grep histfile
 eix allacrity
 eix allacr
@@ -24,7 +23,6 @@ mkdir .dotfiles
 cp .zcompdump .zshenv .zshhistfile .zshrc .dotfiles
 ls .dotfiles
 ls -a .dotfiles
-man stow
 eix stow
 info stow
 tmux a
@@ -34,7 +32,6 @@ emerge -depclean
 emerge --depclean
 tmux l
 emerge @preserved-rebuild
-hx .zshrc
 hx .zp
 rm .zp
 hx .zprofile
@@ -45,16 +42,26 @@ eix discord
 discord -no-update
 hx .config/discord/settings.json
 hx .zshrc
-: 1732567174:0;mv .dotfiles dotfiles
-: 1732567177:0;ls -a
-: 1732567200:0;ls -a | grep dotfiles
-: 1732567217:0;tree dotfiles
-: 1732567260:0;cp .z* dotfiles
-: 1732567263:0;tree dotfiles
-: 1732567705:0;tree -a
-: 1732567750:0;tree -a | grep z
-: 1732567784:0;ls -a | grep z
-: 1732567795:0;ls -al | grep z
-: 1732567903:0;git init .
-: 1732567949:0;git add *
-: 1732567986:0;git add .aliases.zsh .zcompdump .zshenv .zshhistfile .zshrc 
+mv .dotfiles dotfiles
+ls -a
+ls -a | grep dotfiles
+cp .z* dotfiles
+tree dotfiles
+tree -a
+tree -a | grep z
+ls -a | grep z
+ls -al | grep z
+git init .
+git add *
+git add .aliases.zsh .zcompdump .zshenv .zshhistfile .zshrc 
+git config --global user.email "gapp.jakob1@gmail.com"
+git config --global user.name "Jakob Gapp"
+git commit -m "zsh dotfiles added"
+mv .config/kitty dotfiles
+man stow
+stow -d dotfiles
+stow .
+ls -al | grep kitty
+git branch -M main
+git remote add origin https://github.com/KDDFKUFEI/dotfiles.git
+git push -u origin main
