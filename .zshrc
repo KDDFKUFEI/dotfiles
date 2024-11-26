@@ -7,6 +7,9 @@ source ~/.aliases.zsh
 # Report time of execution if it is heigher then 1 second
 REPORTTIME=1
 
+# Helix Runtime
+HELIX_RUNTIME="~/.config/helix/"
+
 # Prompt(right side): "(bold)(green)username(white)@hostname (not bold)(blue)path relative to /home (bold)$ "
 PS1="%B%F{green}%n%f@%M%b %F{blue}%~ %(?..%B%F{red}[%?] )%F{blue}%B$%b%f "
 
